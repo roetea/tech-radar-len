@@ -1,0 +1,42 @@
+name,ring,quadrant,isNew,description
+JavaScript,adopt,Languages and Frameworks,FALSE,JavaScript is our main programming langauge for FrontEnd
+TypeScript,adopt,Languages and Frameworks,TRUE,TypeScript helps to abstract our development
+CSS 3,adopt,Languages and Frameworks,FALSE,Defacto styling standard
+SCSS,adopt,Languages and Frameworks,FALSE,CSS preprocessor. Simplify CSS coding
+JSON,adopt,Languages and Frameworks,FALSE,Standard data structure
+HTML 5,adopt,Languages and Frameworks,FALSE,Defacto web styling standard
+ES6+,adopt,Languages and Frameworks,FALSE,Modern JS standard
+Vue 3,adopt,Languages and Frameworks,FALSE,"Modern UI Framework, EOL around 1 year. It's on the path to deprecation."
+Open API Spec (OAS) Standard,trial,Languages and Frameworks,TRUE,API spec writing standard. Can be used as input to generate codes automatically
+Nodejs > 14,adopt,Languages and Frameworks,FALSE,"JS Engine, defacto"
+Nodejs <= 12,hold,Languages and Frameworks,FALSE,Older JS Engine. We should replace it with latest LTS version (14 or 16).
+React 18,adopt,Languages and Frameworks,FALSE,Popular JS library. We hold this library because it was hard to maintain in previous projects. Hard also to find someone capable of coding React properly
+Angular,hold,Languages and Frameworks,FALSE,Old JS framework. This is the first Angular. We used in old blibli.com UI. Hard to improve performance and very old in technology features
+Jest,adopt,Languages and Frameworks,FALSE,"Simple test runner. It's proven to be fast to code and run. Moreover, it's very easy to scale"
+PHP,hold,Languages and Frameworks,FALSE,PHP Language
+Nuxt.js 3,assess,Languages and Frameworks,FALSE,Server side rendering with vue. This may be the future of Vue. We would love to have SSR to provide faster LCP
+GraphQL,assess,Languages and Frameworks,FALSE,Web query standard to be used for API end points. It can describe data join and filtered fields.
+Service worker,assess,Languages and Frameworks,FALSE,Web worker used to manage resources and background process for a website that can make it behave like a standalone application.
+Partytown,assess,Languages and Frameworks,new,"Library to speed up site by offloading third-party scripts to a web worker. In hope of reducing main thread workload, to increase TBT / TTI"
+NPM,adopt,Tools,FALSE,Defacto package manager. We will use it as default package manager for Frontend projects.
+PNPM,assess,Tools,new,"New kid on the block package manager. The package download and installation process are done in parallel, increasing installation speed."
+Playwright,assess,Tools,new,Browser runner for automated testing. We use this to accomodate integration testing.
+Webpack,adopt,Tools,FALSE,Popular packager. A simple configurable packager that's still used widely. In the future we may all move to Rollup.
+leaflet,adopt,Libraries,new,Library for Map
+OpenLayer,trial,Libraries,new,Library for Map
+Cesium,trial,Libraries,new,Library for Map
+axios,adopt,Libraries,FALSE,"AJAX library helper, should be replaced with built-in window.fetch function or use polyfill for it"
+socket.io,adopt,Libraries,FALSE,Tracking realtime
+docker / docker-cli,adopt,Techniques and Platforms,FALSE,Container management standard. This is the most widely used container management. We use atleast docker-cli to code our build script
+NGINX,adopt,Techniques and Platforms,FALSE,"Default UI server. We use a lightweight http-server to serve our static content. We do some routing, rate-limiting and other simple logic here also using openresty and sub_filter plugin"
+Micro FE,adopt,Techniques and Platforms,FALSE,SIMA Micro FE implementation. It shares React libraries and states across collabs while maintaining isolation and independent deployment
+Window event messaging,adopt,Techniques and Platforms,FALSE,Use window custom event to communicate across components from different repo or inside iframe. The best example is address-module library
+Sonar 8,access,Techniques and Platforms,FALSE,Static Code Analyzer for test coverage and potential risk.
+podman,assess,Techniques and Platforms,new,"Free Container management. This is popular alternative of docker in Mac. Having some problem with pushing large image library to dockerhub, may get hold"
+Rancher Desktop,assess,Techniques and Platforms,new,Docker desktop replacement. Still ongoing to test it all through. The best thing is that it supports docker-cli.
+Docker desktop,hold,Techniques and Platforms,FALSE,Container management UI and dashboard. This is the UI of docker.
+Global Variable in Micro FE,hold,Techniques and Platforms,FALSE,"Avoid using shared global variable, hard to maintain. We can not really sure if the global variable is not used in other collab."
+FE Unit test,hold,Techniques and Platforms,FALSE,Unit test in Frontend can not really shows changes and backward compatibility (integrity) of our UI. It should be replaced by UI Integration Test
+FE Integration test,adopt,Techniques and Platforms,new,Provides snapshots and integrity checking for our UI. It shows before and after for every changes to review properly
+Multi Layered NGINX Gateway (Squad Gateway),trial,Techniques and Platforms,new,"Instead of using only one routing in Blibli Gateway, we want to have detailed routing moved to each squad. So, there will be less risk and effort on maintaining Blibli Gateway"
+Modern JS Output for Modern browser (ES6+),assess,Techniques and Platforms,new,Output adaptive output when building codes. It will most probably use ES6+ standards when possible and falback to ES2005 when not possible.
